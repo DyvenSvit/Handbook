@@ -1,4 +1,26 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model name="Test1.xcdatamodel" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1" systemVersion="11A491" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
-    <elements/>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="6751" systemVersion="13F1066" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="HAOrganization" representedClassName="HAOrganization" isAbstract="YES" syncable="YES">
+        <attribute name="activity" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="address" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="chief" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="code" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="email" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="journal" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="phone" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="website" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="HCommunity" representedClassName="HCommunity" parentEntity="HAOrganization" syncable="YES">
+        <attribute name="father" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="department" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="HDepartment" inverseName="communities" inverseEntity="HDepartment" syncable="YES"/>
+    </entity>
+    <entity name="HDepartment" representedClassName="HDepartment" parentEntity="HAOrganization" syncable="YES">
+        <relationship name="communities" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="HCommunity" inverseName="department" inverseEntity="HCommunity" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="HAOrganization" positionX="-63" positionY="-18" width="128" height="178"/>
+        <element name="HDepartment" positionX="-54" positionY="9" width="128" height="58"/>
+        <element name="HCommunity" positionX="-36" positionY="63" width="128" height="73"/>
+    </elements>
 </model>

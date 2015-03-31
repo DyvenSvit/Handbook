@@ -7,7 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "HDepartment+CD.h"
+#import "HCommunity+CD.h"
+#import "HCommunityViewController.h"
 
-@interface CommunitiesViewController : UIViewController
+@interface HCommunitiesViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
+@property (strong, nonatomic) IBOutlet UITableView *tableView;
+
+@property (strong, nonatomic) HDepartment *department;
+@property (strong, nonatomic) NSArray *communities;
 
 @end

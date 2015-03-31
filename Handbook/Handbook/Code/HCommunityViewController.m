@@ -6,17 +6,17 @@
 //  Copyright (c) 2015 DyvenSvit. All rights reserved.
 //
 
-#import "CommunityViewController.h"
+#import "HCommunityViewController.h"
 
-@interface CommunityViewController ()
+@interface HCommunityViewController ()
 
 @end
 
-@implementation CommunityViewController
-
+@implementation HCommunityViewController
+@synthesize community, lbTitle;
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    lbTitle.text = community.title;
 }
 
 - (void)didReceiveMemoryWarning {

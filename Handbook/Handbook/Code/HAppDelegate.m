@@ -6,17 +6,17 @@
 //  Copyright (c) 2015 DyvenSvit. All rights reserved.
 //
 
-#import "AppDelegate.h"
+#import "HAppDelegate.h"
 
-@interface AppDelegate ()
+@interface HAppDelegate ()
 
 @end
 
-@implementation AppDelegate
+@implementation HAppDelegate
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    [HDataManager preloadData];
     return YES;
 }
 

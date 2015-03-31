@@ -7,7 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "HCommunity+CD.h"
 
-@interface CommunityViewController : UIViewController
+@interface HCommunityViewController : UIViewController
+
+@property (strong, nonatomic) IBOutlet UILabel *lbTitle;
+@property (strong, nonatomic) HCommunity *community;
 
 @end
