@@ -7,14 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8408E57B1ACA942600B2F972 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8408E57A1ACA942600B2F972 /* main.m */; };
-		8408E57E1ACA942600B2F972 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8408E57D1ACA942600B2F972 /* AppDelegate.m */; };
 		8408E5811ACA942600B2F972 /* Handbook.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8408E57F1ACA942600B2F972 /* Handbook.xcdatamodeld */; };
-		8408E5841ACA942600B2F972 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8408E5831ACA942600B2F972 /* ViewController.m */; };
 		8408E5871ACA942600B2F972 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8408E5851ACA942600B2F972 /* Main.storyboard */; };
 		8408E5891ACA942600B2F972 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8408E5881ACA942600B2F972 /* Images.xcassets */; };
 		8408E58C1ACA942600B2F972 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8408E58A1ACA942600B2F972 /* LaunchScreen.xib */; };
 		8408E5981ACA942600B2F972 /* HandbookTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8408E5971ACA942600B2F972 /* HandbookTests.m */; };
+		8408E5A31ACA997C00B2F972 /* HCommunitiesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8408E5A21ACA997C00B2F972 /* HCommunitiesViewController.m */; };
+		8408E5A61ACA999800B2F972 /* HCommunityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8408E5A51ACA999800B2F972 /* HCommunityViewController.m */; };
+		8408E5A81ACA99BE00B2F972 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8408E5A71ACA99BE00B2F972 /* main.m */; };
+		8408E5AE1ACA99EC00B2F972 /* HAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8408E5AD1ACA99EC00B2F972 /* HAppDelegate.m */; };
+		8408E5B11ACA99F300B2F972 /* HDepartmentsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8408E5B01ACA99F300B2F972 /* HDepartmentsViewController.m */; };
+		8452BF841ACAE2A6004372CF /* HDepartment.m in Sources */ = {isa = PBXBuildFile; fileRef = 8452BF831ACAE2A6004372CF /* HDepartment.m */; };
+		8452BF871ACAE2A7004372CF /* HAOrganization.m in Sources */ = {isa = PBXBuildFile; fileRef = 8452BF861ACAE2A7004372CF /* HAOrganization.m */; };
+		8452BF8A1ACAE2A7004372CF /* HCommunity.m in Sources */ = {isa = PBXBuildFile; fileRef = 8452BF891ACAE2A7004372CF /* HCommunity.m */; };
+		8452BF8D1ACAE2FB004372CF /* CoreDataUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 8452BF8C1ACAE2FB004372CF /* CoreDataUtils.m */; };
+		8452BF901ACAE4DE004372CF /* HDepartment+CD.m in Sources */ = {isa = PBXBuildFile; fileRef = 8452BF8F1ACAE4DE004372CF /* HDepartment+CD.m */; };
+		8452BF931ACAE598004372CF /* HCommunity+CD.m in Sources */ = {isa = PBXBuildFile; fileRef = 8452BF921ACAE598004372CF /* HCommunity+CD.m */; };
+		84B996561ACAE70100CD9DE6 /* HCommunity+JSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 84B996551ACAE70100CD9DE6 /* HCommunity+JSON.m */; };
+		84B996591ACAE71C00CD9DE6 /* HDepartment+JSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 84B996581ACAE71C00CD9DE6 /* HDepartment+JSON.m */; };
+		84B9965C1ACAEB0100CD9DE6 /* HDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 84B9965B1ACAEB0100CD9DE6 /* HDataManager.m */; };
+		84B996601ACAF12900CD9DE6 /* comissions.json in Resources */ = {isa = PBXBuildFile; fileRef = 84B9965E1ACAF12900CD9DE6 /* comissions.json */; };
+		84B996611ACAF12900CD9DE6 /* community.json in Resources */ = {isa = PBXBuildFile; fileRef = 84B9965F1ACAF12900CD9DE6 /* community.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,18 +43,42 @@
 /* Begin PBXFileReference section */
 		8408E5751ACA942600B2F972 /* Handbook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Handbook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8408E5791ACA942600B2F972 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8408E57A1ACA942600B2F972 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		8408E57C1ACA942600B2F972 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		8408E57D1ACA942600B2F972 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		8408E5801ACA942600B2F972 /* Handbook.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Handbook.xcdatamodel; sourceTree = "<group>"; };
-		8408E5821ACA942600B2F972 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		8408E5831ACA942600B2F972 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		8408E5861ACA942600B2F972 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8408E5881ACA942600B2F972 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		8408E58B1ACA942600B2F972 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		8408E5911ACA942600B2F972 /* HandbookTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HandbookTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8408E5961ACA942600B2F972 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8408E5971ACA942600B2F972 /* HandbookTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HandbookTests.m; sourceTree = "<group>"; };
+		8408E5A11ACA997C00B2F972 /* HCommunitiesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HCommunitiesViewController.h; path = Code/HCommunitiesViewController.h; sourceTree = "<group>"; };
+		8408E5A21ACA997C00B2F972 /* HCommunitiesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HCommunitiesViewController.m; path = Code/HCommunitiesViewController.m; sourceTree = "<group>"; };
+		8408E5A41ACA999800B2F972 /* HCommunityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HCommunityViewController.h; path = Code/HCommunityViewController.h; sourceTree = "<group>"; };
+		8408E5A51ACA999800B2F972 /* HCommunityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HCommunityViewController.m; path = Code/HCommunityViewController.m; sourceTree = "<group>"; };
+		8408E5A71ACA99BE00B2F972 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = Code/main.m; sourceTree = "<group>"; };
+		8408E5AC1ACA99EC00B2F972 /* HAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HAppDelegate.h; path = Code/HAppDelegate.h; sourceTree = "<group>"; };
+		8408E5AD1ACA99EC00B2F972 /* HAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HAppDelegate.m; path = Code/HAppDelegate.m; sourceTree = "<group>"; };
+		8408E5AF1ACA99F300B2F972 /* HDepartmentsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HDepartmentsViewController.h; path = Code/HDepartmentsViewController.h; sourceTree = "<group>"; };
+		8408E5B01ACA99F300B2F972 /* HDepartmentsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HDepartmentsViewController.m; path = Code/HDepartmentsViewController.m; sourceTree = "<group>"; };
+		8452BF821ACAE2A6004372CF /* HDepartment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HDepartment.h; path = Code/HDepartment.h; sourceTree = "<group>"; };
+		8452BF831ACAE2A6004372CF /* HDepartment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HDepartment.m; path = Code/HDepartment.m; sourceTree = "<group>"; };
+		8452BF851ACAE2A7004372CF /* HAOrganization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HAOrganization.h; path = Code/HAOrganization.h; sourceTree = "<group>"; };
+		8452BF861ACAE2A7004372CF /* HAOrganization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HAOrganization.m; path = Code/HAOrganization.m; sourceTree = "<group>"; };
+		8452BF881ACAE2A7004372CF /* HCommunity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HCommunity.h; path = Code/HCommunity.h; sourceTree = "<group>"; };
+		8452BF891ACAE2A7004372CF /* HCommunity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HCommunity.m; path = Code/HCommunity.m; sourceTree = "<group>"; };
+		8452BF8B1ACAE2FB004372CF /* CoreDataUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CoreDataUtils.h; path = Code/CoreDataUtils.h; sourceTree = "<group>"; };
+		8452BF8C1ACAE2FB004372CF /* CoreDataUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CoreDataUtils.m; path = Code/CoreDataUtils.m; sourceTree = "<group>"; };
+		8452BF8E1ACAE4DE004372CF /* HDepartment+CD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "HDepartment+CD.h"; path = "Code/HDepartment+CD.h"; sourceTree = "<group>"; };
+		8452BF8F1ACAE4DE004372CF /* HDepartment+CD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "HDepartment+CD.m"; path = "Code/HDepartment+CD.m"; sourceTree = "<group>"; };
+		8452BF911ACAE598004372CF /* HCommunity+CD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "HCommunity+CD.h"; path = "Code/HCommunity+CD.h"; sourceTree = "<group>"; };
+		8452BF921ACAE598004372CF /* HCommunity+CD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "HCommunity+CD.m"; path = "Code/HCommunity+CD.m"; sourceTree = "<group>"; };
+		84B996541ACAE70100CD9DE6 /* HCommunity+JSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "HCommunity+JSON.h"; path = "Code/HCommunity+JSON.h"; sourceTree = "<group>"; };
+		84B996551ACAE70100CD9DE6 /* HCommunity+JSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "HCommunity+JSON.m"; path = "Code/HCommunity+JSON.m"; sourceTree = "<group>"; };
+		84B996571ACAE71C00CD9DE6 /* HDepartment+JSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "HDepartment+JSON.h"; path = "Code/HDepartment+JSON.h"; sourceTree = "<group>"; };
+		84B996581ACAE71C00CD9DE6 /* HDepartment+JSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "HDepartment+JSON.m"; path = "Code/HDepartment+JSON.m"; sourceTree = "<group>"; };
+		84B9965A1ACAEB0100CD9DE6 /* HDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HDataManager.h; path = Code/HDataManager.h; sourceTree = "<group>"; };
+		84B9965B1ACAEB0100CD9DE6 /* HDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HDataManager.m; path = Code/HDataManager.m; sourceTree = "<group>"; };
+		84B9965E1ACAF12900CD9DE6 /* comissions.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = comissions.json; path = Resources/comissions.json; sourceTree = "<group>"; };
+		84B9965F1ACAF12900CD9DE6 /* community.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = community.json; path = Resources/community.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,10 +120,8 @@
 		8408E5771ACA942600B2F972 /* Handbook */ = {
 			isa = PBXGroup;
 			children = (
-				8408E57C1ACA942600B2F972 /* AppDelegate.h */,
-				8408E57D1ACA942600B2F972 /* AppDelegate.m */,
-				8408E5821ACA942600B2F972 /* ViewController.h */,
-				8408E5831ACA942600B2F972 /* ViewController.m */,
+				84B9965D1ACAF11800CD9DE6 /* Resources */,
+				8408E5A91ACA99CA00B2F972 /* Code */,
 				8408E5851ACA942600B2F972 /* Main.storyboard */,
 				8408E5881ACA942600B2F972 /* Images.xcassets */,
 				8408E58A1ACA942600B2F972 /* LaunchScreen.xib */,
@@ -99,8 +134,8 @@
 		8408E5781ACA942600B2F972 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				8408E5A71ACA99BE00B2F972 /* main.m */,
 				8408E5791ACA942600B2F972 /* Info.plist */,
-				8408E57A1ACA942600B2F972 /* main.m */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -120,6 +155,72 @@
 				8408E5961ACA942600B2F972 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8408E5A91ACA99CA00B2F972 /* Code */ = {
+			isa = PBXGroup;
+			children = (
+				8452BF811ACADF1D004372CF /* Model */,
+				8408E5AC1ACA99EC00B2F972 /* HAppDelegate.h */,
+				8408E5AD1ACA99EC00B2F972 /* HAppDelegate.m */,
+				8408E5AA1ACA99CF00B2F972 /* UI */,
+			);
+			name = Code;
+			sourceTree = "<group>";
+		};
+		8408E5AA1ACA99CF00B2F972 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				8408E5AB1ACA99D500B2F972 /* ViewControllers */,
+			);
+			name = UI;
+			sourceTree = "<group>";
+		};
+		8408E5AB1ACA99D500B2F972 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				8408E5AF1ACA99F300B2F972 /* HDepartmentsViewController.h */,
+				8408E5B01ACA99F300B2F972 /* HDepartmentsViewController.m */,
+				8408E5A11ACA997C00B2F972 /* HCommunitiesViewController.h */,
+				8408E5A21ACA997C00B2F972 /* HCommunitiesViewController.m */,
+				8408E5A41ACA999800B2F972 /* HCommunityViewController.h */,
+				8408E5A51ACA999800B2F972 /* HCommunityViewController.m */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		8452BF811ACADF1D004372CF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8452BF8B1ACAE2FB004372CF /* CoreDataUtils.h */,
+				8452BF8C1ACAE2FB004372CF /* CoreDataUtils.m */,
+				8452BF881ACAE2A7004372CF /* HCommunity.h */,
+				8452BF891ACAE2A7004372CF /* HCommunity.m */,
+				8452BF851ACAE2A7004372CF /* HAOrganization.h */,
+				8452BF861ACAE2A7004372CF /* HAOrganization.m */,
+				8452BF821ACAE2A6004372CF /* HDepartment.h */,
+				8452BF831ACAE2A6004372CF /* HDepartment.m */,
+				8452BF8E1ACAE4DE004372CF /* HDepartment+CD.h */,
+				8452BF8F1ACAE4DE004372CF /* HDepartment+CD.m */,
+				8452BF911ACAE598004372CF /* HCommunity+CD.h */,
+				8452BF921ACAE598004372CF /* HCommunity+CD.m */,
+				84B996541ACAE70100CD9DE6 /* HCommunity+JSON.h */,
+				84B996551ACAE70100CD9DE6 /* HCommunity+JSON.m */,
+				84B996571ACAE71C00CD9DE6 /* HDepartment+JSON.h */,
+				84B996581ACAE71C00CD9DE6 /* HDepartment+JSON.m */,
+				84B9965A1ACAEB0100CD9DE6 /* HDataManager.h */,
+				84B9965B1ACAEB0100CD9DE6 /* HDataManager.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		84B9965D1ACAF11800CD9DE6 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				84B9965E1ACAF12900CD9DE6 /* comissions.json */,
+				84B9965F1ACAF12900CD9DE6 /* community.json */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -204,7 +305,9 @@
 			files = (
 				8408E5871ACA942600B2F972 /* Main.storyboard in Resources */,
 				8408E58C1ACA942600B2F972 /* LaunchScreen.xib in Resources */,
+				84B996601ACAF12900CD9DE6 /* comissions.json in Resources */,
 				8408E5891ACA942600B2F972 /* Images.xcassets in Resources */,
+				84B996611ACAF12900CD9DE6 /* community.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -222,10 +325,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8408E57E1ACA942600B2F972 /* AppDelegate.m in Sources */,
-				8408E57B1ACA942600B2F972 /* main.m in Sources */,
-				8408E5841ACA942600B2F972 /* ViewController.m in Sources */,
+				8408E5A61ACA999800B2F972 /* HCommunityViewController.m in Sources */,
+				8452BF871ACAE2A7004372CF /* HAOrganization.m in Sources */,
+				84B996591ACAE71C00CD9DE6 /* HDepartment+JSON.m in Sources */,
+				8408E5A31ACA997C00B2F972 /* HCommunitiesViewController.m in Sources */,
+				8452BF841ACAE2A6004372CF /* HDepartment.m in Sources */,
+				8452BF8D1ACAE2FB004372CF /* CoreDataUtils.m in Sources */,
+				8452BF931ACAE598004372CF /* HCommunity+CD.m in Sources */,
+				8408E5A81ACA99BE00B2F972 /* main.m in Sources */,
+				84B996561ACAE70100CD9DE6 /* HCommunity+JSON.m in Sources */,
+				84B9965C1ACAEB0100CD9DE6 /* HDataManager.m in Sources */,
 				8408E5811ACA942600B2F972 /* Handbook.xcdatamodeld in Sources */,
+				8408E5B11ACA99F300B2F972 /* HDepartmentsViewController.m in Sources */,
+				8452BF8A1ACAE2A7004372CF /* HCommunity.m in Sources */,
+				8452BF901ACAE4DE004372CF /* HDepartment+CD.m in Sources */,
+				8408E5AE1ACA99EC00B2F972 /* HAppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -418,6 +532,7 @@
 				8408E59D1ACA942600B2F972 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8408E59E1ACA942600B2F972 /* Build configuration list for PBXNativeTarget "HandbookTests" */ = {
 			isa = XCConfigurationList;
@@ -426,6 +541,7 @@
 				8408E5A01ACA942600B2F972 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

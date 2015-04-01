@@ -8,8 +8,11 @@
 
 #import <UIKit/UIKit.h>
 #import <CoreData/CoreData.h>
+#import "HDataManager.h"
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
+#define APP ((HAppDelegate*)[UIApplication sharedApplication].delegate)
+
+@interface HAppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
 
