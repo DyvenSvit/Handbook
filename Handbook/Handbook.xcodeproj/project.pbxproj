@@ -20,6 +20,7 @@
 		840B166A1ACBF2ED0002C3D0 /* NSString+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 840B16691ACBF2ED0002C3D0 /* NSString+Utils.m */; };
 		840B166D1ACC12020002C3D0 /* HDepartmentCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 840B166C1ACC12020002C3D0 /* HDepartmentCell.m */; };
 		840B16711ACC121E0002C3D0 /* HCommunityCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 840B16701ACC121E0002C3D0 /* HCommunityCell.m */; };
+		840B16741ACC24250002C3D0 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 840B16731ACC24250002C3D0 /* logo.png */; };
 		8452BF841ACAE2A6004372CF /* HDepartment.m in Sources */ = {isa = PBXBuildFile; fileRef = 8452BF831ACAE2A6004372CF /* HDepartment.m */; };
 		8452BF871ACAE2A7004372CF /* HAOrganization.m in Sources */ = {isa = PBXBuildFile; fileRef = 8452BF861ACAE2A7004372CF /* HAOrganization.m */; };
 		8452BF8A1ACAE2A7004372CF /* HCommunity.m in Sources */ = {isa = PBXBuildFile; fileRef = 8452BF891ACAE2A7004372CF /* HCommunity.m */; };
@@ -68,6 +69,9 @@
 		840B166C1ACC12020002C3D0 /* HDepartmentCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HDepartmentCell.m; path = Code/HDepartmentCell.m; sourceTree = "<group>"; };
 		840B166F1ACC121E0002C3D0 /* HCommunityCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HCommunityCell.h; path = Code/HCommunityCell.h; sourceTree = "<group>"; };
 		840B16701ACC121E0002C3D0 /* HCommunityCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HCommunityCell.m; path = Code/HCommunityCell.m; sourceTree = "<group>"; };
+		840B16731ACC24250002C3D0 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = logo.png; path = Resources/logo.png; sourceTree = "<group>"; };
+		840B16751ACC3ACC0002C3D0 /* uk */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = uk; path = uk.lproj/Main.strings; sourceTree = "<group>"; };
+		840B16761ACC3ACC0002C3D0 /* uk */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = uk; path = uk.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		8452BF821ACAE2A6004372CF /* HDepartment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HDepartment.h; path = Code/HDepartment.h; sourceTree = "<group>"; };
 		8452BF831ACAE2A6004372CF /* HDepartment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HDepartment.m; path = Code/HDepartment.m; sourceTree = "<group>"; };
 		8452BF851ACAE2A7004372CF /* HAOrganization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HAOrganization.h; path = Code/HAOrganization.h; sourceTree = "<group>"; };
@@ -220,6 +224,14 @@
 			name = Cells;
 			sourceTree = "<group>";
 		};
+		840B16721ACC24190002C3D0 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				840B16731ACC24250002C3D0 /* logo.png */,
+			);
+			name = images;
+			sourceTree = "<group>";
+		};
 		8452BF811ACADF1D004372CF /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -248,6 +260,7 @@
 		84B9965D1ACAF11800CD9DE6 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				840B16721ACC24190002C3D0 /* images */,
 				84B9965E1ACAF12900CD9DE6 /* comissions.json */,
 				84B9965F1ACAF12900CD9DE6 /* community.json */,
 			);
@@ -303,6 +316,7 @@
 				TargetAttributes = {
 					8408E5741ACA942600B2F972 = {
 						CreatedOnToolsVersion = 6.2;
+						DevelopmentTeam = ZV926KLGMR;
 					};
 					8408E5901ACA942600B2F972 = {
 						CreatedOnToolsVersion = 6.2;
@@ -336,6 +350,7 @@
 			files = (
 				8408E5871ACA942600B2F972 /* Main.storyboard in Resources */,
 				8408E58C1ACA942600B2F972 /* LaunchScreen.xib in Resources */,
+				840B16741ACC24250002C3D0 /* logo.png in Resources */,
 				84B996601ACAF12900CD9DE6 /* comissions.json in Resources */,
 				8408E5891ACA942600B2F972 /* Images.xcassets in Resources */,
 				84B996611ACAF12900CD9DE6 /* community.json in Resources */,
@@ -400,6 +415,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				8408E5861ACA942600B2F972 /* Base */,
+				840B16751ACC3ACC0002C3D0 /* uk */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -408,6 +424,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				8408E58B1ACA942600B2F972 /* Base */,
+				840B16761ACC3ACC0002C3D0 /* uk */,
 			);
 			name = LaunchScreen.xib;
 			sourceTree = "<group>";
@@ -452,6 +469,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "d21903f8-90e2-4c8a-affa-e86c28424774";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -487,6 +505,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				PROVISIONING_PROFILE = "d21903f8-90e2-4c8a-affa-e86c28424774";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -498,6 +517,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = Handbook/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -510,6 +530,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = Handbook/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

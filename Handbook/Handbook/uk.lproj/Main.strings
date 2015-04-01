@@ -1,0 +1,39 @@
+
+/* Class = "UIButton"; normalTitle = "096-666-74-77"; ObjectID = "1gr-CY-YFt"; */
+"1gr-CY-YFt.normalTitle" = "096-666-74-77";
+
+/* Class = "UILabel"; text = "Тернопіль"; ObjectID = "A3j-SD-3pQ"; */
+"A3j-SD-3pQ.text" = "Тернопіль";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "EwR-cE-R3f"; */
+"EwR-cE-R3f.text" = "Label";
+
+/* Class = "UILabel"; text = "Телефон:"; ObjectID = "HFp-Zx-jew"; */
+"HFp-Zx-jew.text" = "Телефон:";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "Hop-MI-Wsa"; */
+"Hop-MI-Wsa.text" = "Label";
+
+/* Class = "UILabel"; text = "о. Іван Січкарик, о.Роман Чубара"; ObjectID = "Kw9-mb-Uzf"; */
+"Kw9-mb-Uzf.text" = "о. Іван Січкарик, о.Роман Чубара";
+
+/* Class = "UILabel"; text = "Голова:"; ObjectID = "NC3-Jy-y8z"; */
+"NC3-Jy-y8z.text" = "Голова:";
+
+/* Class = "UILabel"; text = "Email:"; ObjectID = "T9K-XO-ca1"; */
+"T9K-XO-ca1.text" = "Email:";
+
+/* Class = "UILabel"; text = "Адреса:"; ObjectID = "VMx-6t-5XE"; */
+"VMx-6t-5XE.text" = "Адреса:";
+
+/* Class = "UILabel"; text = "ТУСК \"Обнова\""; ObjectID = "Wz8-t1-gqF"; */
+"Wz8-t1-gqF.text" = "ТУСК \"Обнова\"";
+
+/* Class = "UILabel"; text = "Духівник:"; ObjectID = "Y5e-ph-CHi"; */
+"Y5e-ph-CHi.text" = "Духівник:";
+
+/* Class = "UIButton"; normalTitle = "obnova.ternopil@gmail.com"; ObjectID = "bP8-w8-nak"; */
+"bP8-w8-nak.normalTitle" = "obnova.ternopil@gmail.com";
+
+/* Class = "UILabel"; text = "Тарас Кравецький"; ObjectID = "zCW-br-T5b"; */
+"zCW-br-T5b.text" = "Тарас Кравецький";
