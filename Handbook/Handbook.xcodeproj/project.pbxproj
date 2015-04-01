@@ -17,6 +17,9 @@
 		8408E5A81ACA99BE00B2F972 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8408E5A71ACA99BE00B2F972 /* main.m */; };
 		8408E5AE1ACA99EC00B2F972 /* HAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8408E5AD1ACA99EC00B2F972 /* HAppDelegate.m */; };
 		8408E5B11ACA99F300B2F972 /* HDepartmentsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8408E5B01ACA99F300B2F972 /* HDepartmentsViewController.m */; };
+		840B166A1ACBF2ED0002C3D0 /* NSString+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 840B16691ACBF2ED0002C3D0 /* NSString+Utils.m */; };
+		840B166D1ACC12020002C3D0 /* HDepartmentCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 840B166C1ACC12020002C3D0 /* HDepartmentCell.m */; };
+		840B16711ACC121E0002C3D0 /* HCommunityCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 840B16701ACC121E0002C3D0 /* HCommunityCell.m */; };
 		8452BF841ACAE2A6004372CF /* HDepartment.m in Sources */ = {isa = PBXBuildFile; fileRef = 8452BF831ACAE2A6004372CF /* HDepartment.m */; };
 		8452BF871ACAE2A7004372CF /* HAOrganization.m in Sources */ = {isa = PBXBuildFile; fileRef = 8452BF861ACAE2A7004372CF /* HAOrganization.m */; };
 		8452BF8A1ACAE2A7004372CF /* HCommunity.m in Sources */ = {isa = PBXBuildFile; fileRef = 8452BF891ACAE2A7004372CF /* HCommunity.m */; };
@@ -59,6 +62,12 @@
 		8408E5AD1ACA99EC00B2F972 /* HAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HAppDelegate.m; path = Code/HAppDelegate.m; sourceTree = "<group>"; };
 		8408E5AF1ACA99F300B2F972 /* HDepartmentsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HDepartmentsViewController.h; path = Code/HDepartmentsViewController.h; sourceTree = "<group>"; };
 		8408E5B01ACA99F300B2F972 /* HDepartmentsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HDepartmentsViewController.m; path = Code/HDepartmentsViewController.m; sourceTree = "<group>"; };
+		840B16681ACBF2ED0002C3D0 /* NSString+Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSString+Utils.h"; path = "Code/NSString+Utils.h"; sourceTree = "<group>"; };
+		840B16691ACBF2ED0002C3D0 /* NSString+Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSString+Utils.m"; path = "Code/NSString+Utils.m"; sourceTree = "<group>"; };
+		840B166B1ACC12020002C3D0 /* HDepartmentCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HDepartmentCell.h; path = Code/HDepartmentCell.h; sourceTree = "<group>"; };
+		840B166C1ACC12020002C3D0 /* HDepartmentCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HDepartmentCell.m; path = Code/HDepartmentCell.m; sourceTree = "<group>"; };
+		840B166F1ACC121E0002C3D0 /* HCommunityCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HCommunityCell.h; path = Code/HCommunityCell.h; sourceTree = "<group>"; };
+		840B16701ACC121E0002C3D0 /* HCommunityCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HCommunityCell.m; path = Code/HCommunityCell.m; sourceTree = "<group>"; };
 		8452BF821ACAE2A6004372CF /* HDepartment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HDepartment.h; path = Code/HDepartment.h; sourceTree = "<group>"; };
 		8452BF831ACAE2A6004372CF /* HDepartment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HDepartment.m; path = Code/HDepartment.m; sourceTree = "<group>"; };
 		8452BF851ACAE2A7004372CF /* HAOrganization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HAOrganization.h; path = Code/HAOrganization.h; sourceTree = "<group>"; };
@@ -160,6 +169,7 @@
 		8408E5A91ACA99CA00B2F972 /* Code */ = {
 			isa = PBXGroup;
 			children = (
+				840B16671ACBF2CF0002C3D0 /* Utils */,
 				8452BF811ACADF1D004372CF /* Model */,
 				8408E5AC1ACA99EC00B2F972 /* HAppDelegate.h */,
 				8408E5AD1ACA99EC00B2F972 /* HAppDelegate.m */,
@@ -171,6 +181,7 @@
 		8408E5AA1ACA99CF00B2F972 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				840B166E1ACC12060002C3D0 /* Cells */,
 				8408E5AB1ACA99D500B2F972 /* ViewControllers */,
 			);
 			name = UI;
@@ -187,6 +198,26 @@
 				8408E5A51ACA999800B2F972 /* HCommunityViewController.m */,
 			);
 			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		840B16671ACBF2CF0002C3D0 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				840B16681ACBF2ED0002C3D0 /* NSString+Utils.h */,
+				840B16691ACBF2ED0002C3D0 /* NSString+Utils.m */,
+			);
+			name = Utils;
+			sourceTree = "<group>";
+		};
+		840B166E1ACC12060002C3D0 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				840B166B1ACC12020002C3D0 /* HDepartmentCell.h */,
+				840B166C1ACC12020002C3D0 /* HDepartmentCell.m */,
+				840B166F1ACC121E0002C3D0 /* HCommunityCell.h */,
+				840B16701ACC121E0002C3D0 /* HCommunityCell.m */,
+			);
+			name = Cells;
 			sourceTree = "<group>";
 		};
 		8452BF811ACADF1D004372CF /* Model */ = {
@@ -340,6 +371,9 @@
 				8452BF8A1ACAE2A7004372CF /* HCommunity.m in Sources */,
 				8452BF901ACAE4DE004372CF /* HDepartment+CD.m in Sources */,
 				8408E5AE1ACA99EC00B2F972 /* HAppDelegate.m in Sources */,
+				840B166A1ACBF2ED0002C3D0 /* NSString+Utils.m in Sources */,
+				840B16711ACC121E0002C3D0 /* HCommunityCell.m in Sources */,
+				840B166D1ACC12020002C3D0 /* HDepartmentCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -463,7 +497,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = Handbook/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -473,7 +509,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = Handbook/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};

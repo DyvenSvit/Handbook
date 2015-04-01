@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import <CoreData/CoreData.h>
+#import <MessageUI/MessageUI.h>
 #import "HDataManager.h"
 
 #define APP ((HAppDelegate*)[UIApplication sharedApplication].delegate)
@@ -19,10 +20,10 @@
 @property (readonly, strong, nonatomic) NSManagedObjectContext *managedObjectContext;
 @property (readonly, strong, nonatomic) NSManagedObjectModel *managedObjectModel;
 @property (readonly, strong, nonatomic) NSPersistentStoreCoordinator *persistentStoreCoordinator;
-
+@property (nonatomic, strong) MFMailComposeViewController *globalMailComposer;
 - (void)saveContext;
 - (NSURL *)applicationDocumentsDirectory;
-
+-(void)cycleTheGlobalMailComposer;
 
 @end
 

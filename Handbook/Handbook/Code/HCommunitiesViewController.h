@@ -10,6 +10,7 @@
 #import "HDepartment+CD.h"
 #import "HCommunity+CD.h"
 #import "HCommunityViewController.h"
+#import "HCommunityCell.h"
 
 @interface HCommunitiesViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
 @property (strong, nonatomic) IBOutlet UITableView *tableView;

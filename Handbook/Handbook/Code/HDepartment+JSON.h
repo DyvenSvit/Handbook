@@ -7,6 +7,7 @@
 //
 
 #import "HDepartment+CD.h"
+#import "NSString+Utils.h"
 
 @interface HDepartment (JSON)
 + (HDepartment*)departmentWithDictionary:(NSDictionary*)dict;

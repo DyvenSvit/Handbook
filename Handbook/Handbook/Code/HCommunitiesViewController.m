@@ -17,6 +17,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     communities = [department.communities allObjects];
+    [[self navigationItem] setTitle:@"Спільноти"];
+    [[self navigationItem] setBackBarButtonItem:[[UIBarButtonItem alloc] initWithTitle:@" " style:UIBarButtonItemStyleDone target:nil action:nil]];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -31,10 +33,10 @@
 
 -(UITableViewCell*)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    UITableViewCell *result = [tableView dequeueReusableCellWithIdentifier:@"HCommunityCell" forIndexPath:indexPath];
+    HCommunityCell *result = (HCommunityCell*)[tableView dequeueReusableCellWithIdentifier:@"HCommunityCell" forIndexPath:indexPath];
     
-    result.textLabel.text = ((HCommunity*)communities[indexPath.row]).title;
-    
+    result.lbTitle.text = ((HCommunity*)communities[indexPath.row]).title;
+
     return result;
 }
 

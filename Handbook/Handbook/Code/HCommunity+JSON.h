@@ -8,6 +8,7 @@
 
 #import "HCommunity+CD.h"
 #import "HDepartment+CD.h"
+#import "NSString+Utils.h"
 
 @interface HCommunity (JSON)
 + (HCommunity*)communityWithDictionary:(NSDictionary*)dict;

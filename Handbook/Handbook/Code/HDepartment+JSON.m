@@ -12,7 +12,8 @@
 + (HDepartment*)departmentWithDictionary:(NSDictionary*)dict
 {
     HDepartment* item = nil;
-    int code = [[dict objectForKey:@"code"] integerValue];
+    
+    int code = [[dict objectForKey:@"code"] parseInt];
     if([HDepartment isDepartmentWithID:code])
     {
         item = [HDepartment getDepartmentByID:code];

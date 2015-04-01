@@ -13,20 +13,39 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="64" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="536"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="lJj-9H-zVQ">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="lJj-9H-zVQ">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="536"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="separatorColor" red="0.42352941179999998" green="0.63529411759999999" blue="0.1647058824" alpha="1" colorSpace="calibratedRGB"/>
+                                <inset key="separatorInset" minX="15" minY="0.0" maxX="15" maxY="0.0"/>
                                 <prototypes>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="HDepartmentCell" id="pZe-z7-Uug">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="HDepartmentCell" id="pZe-z7-Uug" customClass="HDepartmentCell">
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="pZe-z7-Uug" id="2X1-5f-2I8">
                                             <autoresizingMask key="autoresizingMask"/>
-                                            <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="EwR-cE-R3f">
+                                                    <rect key="frame" x="8" y="11" width="584" height="21"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="21" id="Eaq-dP-1nc"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="20"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="EwR-cE-R3f" secondAttribute="trailing" constant="8" id="Evg-sK-sf1"/>
+                                                <constraint firstAttribute="centerY" secondItem="EwR-cE-R3f" secondAttribute="centerY" id="ZaV-eT-HNh"/>
+                                                <constraint firstItem="EwR-cE-R3f" firstAttribute="leading" secondItem="2X1-5f-2I8" secondAttribute="leading" constant="8" id="ucQ-l6-l2l"/>
+                                            </constraints>
                                         </tableViewCellContentView>
                                         <connections>
+                                            <outlet property="lbTitle" destination="EwR-cE-R3f" id="tzL-Rp-6ZR"/>
                                             <segue destination="Myw-Zn-CWp" kind="show" identifier="ShowCommunities" id="IyU-GZ-HZm"/>
                                         </connections>
                                     </tableViewCell>
@@ -38,6 +57,12 @@
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="lJj-9H-zVQ" secondAttribute="bottom" id="d7h-ay-rYK"/>
+                            <constraint firstAttribute="trailing" secondItem="lJj-9H-zVQ" secondAttribute="trailing" id="mSM-D8-VFz"/>
+                            <constraint firstItem="lJj-9H-zVQ" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="uUV-m6-d6F"/>
+                            <constraint firstItem="lJj-9H-zVQ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="yju-M8-wfV"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="NVp-OZ-2do"/>
                     <connections>
@@ -57,20 +82,39 @@
                         <viewControllerLayoutGuide type="bottom" id="XCx-1s-N5A"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="zbo-RW-01e">
-                        <rect key="frame" x="0.0" y="64" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="536"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="JD3-kv-fFc">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="JD3-kv-fFc">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="536"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="separatorColor" red="0.42352941179999998" green="0.63529411759999999" blue="0.1647058824" alpha="1" colorSpace="calibratedRGB"/>
+                                <inset key="separatorInset" minX="15" minY="0.0" maxX="15" maxY="0.0"/>
                                 <prototypes>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="HCommunityCell" id="wqZ-ba-HC7">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="HCommunityCell" id="wqZ-ba-HC7" customClass="HCommunityCell">
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="wqZ-ba-HC7" id="wTF-dc-J0u">
                                             <autoresizingMask key="autoresizingMask"/>
-                                            <color key="backgroundColor" red="0.42352941179999998" green="0.63529411759999999" blue="0.1647058824" alpha="1" colorSpace="calibratedRGB"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Hop-MI-Wsa">
+                                                    <rect key="frame" x="8" y="11" width="584" height="21"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="21" id="0Jq-iF-S8p"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="20"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <constraints>
+                                                <constraint firstAttribute="centerY" secondItem="Hop-MI-Wsa" secondAttribute="centerY" id="AHd-Nn-EqG"/>
+                                                <constraint firstItem="Hop-MI-Wsa" firstAttribute="leading" secondItem="wTF-dc-J0u" secondAttribute="leading" constant="8" id="Odd-qd-R9U"/>
+                                                <constraint firstAttribute="trailing" secondItem="Hop-MI-Wsa" secondAttribute="trailing" constant="8" id="S3I-IH-8Xw"/>
+                                            </constraints>
                                         </tableViewCellContentView>
                                         <connections>
+                                            <outlet property="lbTitle" destination="Hop-MI-Wsa" id="xF8-4U-oan"/>
                                             <segue destination="pXf-tX-tbF" kind="show" identifier="ShowCommunity" id="EJh-RS-NAg"/>
                                         </connections>
                                     </tableViewCell>
@@ -82,6 +126,12 @@
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="JD3-kv-fFc" firstAttribute="top" secondItem="zWQ-Pz-OMj" secondAttribute="bottom" id="ZBk-Qq-mQq"/>
+                            <constraint firstItem="JD3-kv-fFc" firstAttribute="leading" secondItem="zbo-RW-01e" secondAttribute="leading" id="b47-Gf-enq"/>
+                            <constraint firstAttribute="trailing" secondItem="JD3-kv-fFc" secondAttribute="trailing" id="f0X-Cc-HzJ"/>
+                            <constraint firstItem="XCx-1s-N5A" firstAttribute="top" secondItem="JD3-kv-fFc" secondAttribute="bottom" id="gTc-r7-25t"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="tableView" destination="JD3-kv-fFc" id="q0h-XZ-rhL"/>
@@ -89,17 +139,18 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="b9v-bL-sTz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="842" y="136"/>
+            <point key="canvasLocation" x="842" y="135"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="XbA-mq-NkA">
             <objects>
                 <navigationController id="Ov6-pQ-iYS" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="XWh-nK-6aV">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="XWh-nK-6aV">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <textAttributes key="titleTextAttributes">
-                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                            <fontDescription key="fontDescription" name="Avenir-Roman" family="Avenir" pointSize="20"/>
                             <color key="textColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         </textAttributes>
                     </navigationBar>
@@ -120,43 +171,173 @@
                         <viewControllerLayoutGuide type="bottom" id="jjD-s2-Ldg"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="xAj-0V-glt">
-                        <rect key="frame" x="0.0" y="64" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="536"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="VMx-6t-5XE">
-                                <rect key="frame" x="16" y="110" width="568" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ТУСК &quot;Обнова&quot;" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Wz8-t1-gqF">
+                                <rect key="frame" x="16" y="16" width="568" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="9jj-mf-AXb"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="26"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="A3j-SD-3pQ">
-                                <rect key="frame" x="16" y="224" width="568" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Тернопіль" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="A3j-SD-3pQ">
+                                <rect key="frame" x="101" y="60" width="483" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="z4g-Ow-TSZ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="26"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="mQg-fL-pZr">
-                                <rect key="frame" x="16" y="186" width="568" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Духівник:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Y5e-ph-CHi">
+                                <rect key="frame" x="16" y="107" width="77" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="77" id="5De-Yy-1M4"/>
+                                    <constraint firstAttribute="height" constant="30" id="ODb-km-WXx"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="20"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Ajp-4k-H3i">
-                                <rect key="frame" x="16" y="148" width="568" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="о. Іван Січкарик, о.Роман Чубара" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Kw9-mb-Uzf">
+                                <rect key="frame" x="101" y="104" width="483" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="FIa-K9-qgp"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="26"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Wz8-t1-gqF">
-                                <rect key="frame" x="16" y="72" width="568" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Голова:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="NC3-Jy-y8z">
+                                <rect key="frame" x="16" y="151" width="77" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Aku-JT-lTA"/>
+                                    <constraint firstAttribute="width" constant="77" id="lRH-VN-sW3"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="20"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Тарас Кравецький" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="zCW-br-T5b">
+                                <rect key="frame" x="101" y="148" width="483" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="27l-wn-lLu"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="26"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="T9K-XO-ca1">
+                                <rect key="frame" x="16" y="192" width="77" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="77" id="DL7-gQ-bJG"/>
+                                    <constraint firstAttribute="height" constant="50" id="S5H-jM-5Bz"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="20"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bP8-w8-nak">
+                                <rect key="frame" x="101" y="192" width="483" height="50"/>
+                                <color key="backgroundColor" red="0.42352941179999998" green="0.63529411759999999" blue="0.1647058824" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="MOB-jX-7cK"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="20"/>
+                                <state key="normal" title="obnova.ternopil@gmail.com">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Телефон:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="HFp-Zx-jew">
+                                <rect key="frame" x="16" y="250" width="77" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="1tU-wH-l78"/>
+                                    <constraint firstAttribute="width" constant="77" id="8EP-QY-5V5"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="20"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1gr-CY-YFt">
+                                <rect key="frame" x="101" y="250" width="483" height="50"/>
+                                <color key="backgroundColor" red="0.42352941179999998" green="0.63529411759999999" blue="0.1647058824" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="bFB-Lh-0Lr"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="26"/>
+                                <state key="normal" title="096-666-74-77">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Адреса:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="VMx-6t-5XE">
+                                <rect key="frame" x="16" y="63" width="77" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Z7h-E0-O46"/>
+                                    <constraint firstAttribute="width" constant="77" id="v5j-cr-pL1"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="20"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" red="0.0" green="0.50196081399917603" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="VMx-6t-5XE" firstAttribute="leading" secondItem="xAj-0V-glt" secondAttribute="leading" constant="16" id="3nG-Hq-x6x"/>
+                            <constraint firstAttribute="trailing" secondItem="Kw9-mb-Uzf" secondAttribute="trailing" constant="16" id="57H-Ds-hOk"/>
+                            <constraint firstItem="zCW-br-T5b" firstAttribute="centerY" secondItem="NC3-Jy-y8z" secondAttribute="centerY" id="5E3-wo-v7h"/>
+                            <constraint firstAttribute="trailing" secondItem="bP8-w8-nak" secondAttribute="trailing" constant="16" id="B6E-6D-kHt"/>
+                            <constraint firstAttribute="trailing" secondItem="1gr-CY-YFt" secondAttribute="trailing" constant="16" id="C2I-7p-4h8"/>
+                            <constraint firstAttribute="trailing" secondItem="Wz8-t1-gqF" secondAttribute="trailing" constant="16" id="FtV-3q-ees"/>
+                            <constraint firstItem="Y5e-ph-CHi" firstAttribute="leading" secondItem="xAj-0V-glt" secondAttribute="leading" constant="16" id="HxK-UD-tch"/>
+                            <constraint firstAttribute="trailing" secondItem="zCW-br-T5b" secondAttribute="trailing" constant="16" id="I3w-tv-Eej"/>
+                            <constraint firstItem="VMx-6t-5XE" firstAttribute="centerY" secondItem="A3j-SD-3pQ" secondAttribute="centerY" id="KAQ-e6-ArR"/>
+                            <constraint firstItem="A3j-SD-3pQ" firstAttribute="leading" secondItem="VMx-6t-5XE" secondAttribute="trailing" constant="8" id="PHv-M5-X1Z"/>
+                            <constraint firstItem="Wz8-t1-gqF" firstAttribute="top" secondItem="1z3-XM-j3R" secondAttribute="bottom" constant="16" id="Ppr-lj-MvK"/>
+                            <constraint firstItem="HFp-Zx-jew" firstAttribute="leading" secondItem="xAj-0V-glt" secondAttribute="leading" constant="16" id="Q04-lK-hY1"/>
+                            <constraint firstItem="bP8-w8-nak" firstAttribute="leading" secondItem="T9K-XO-ca1" secondAttribute="trailing" constant="8" id="Q9t-HO-KX7"/>
+                            <constraint firstItem="NC3-Jy-y8z" firstAttribute="leading" secondItem="xAj-0V-glt" secondAttribute="leading" constant="16" id="RLA-h6-lrR"/>
+                            <constraint firstItem="A3j-SD-3pQ" firstAttribute="top" secondItem="Wz8-t1-gqF" secondAttribute="bottom" constant="8" id="WIl-2T-V2i"/>
+                            <constraint firstItem="Kw9-mb-Uzf" firstAttribute="centerY" secondItem="Y5e-ph-CHi" secondAttribute="centerY" id="bga-pk-nfg"/>
+                            <constraint firstItem="HFp-Zx-jew" firstAttribute="centerY" secondItem="1gr-CY-YFt" secondAttribute="centerY" id="cic-A9-fab"/>
+                            <constraint firstItem="bP8-w8-nak" firstAttribute="top" secondItem="zCW-br-T5b" secondAttribute="bottom" constant="8" id="e5m-7s-chn"/>
+                            <constraint firstItem="Wz8-t1-gqF" firstAttribute="leading" secondItem="xAj-0V-glt" secondAttribute="leading" constant="16" id="fk8-8x-ixp"/>
+                            <constraint firstItem="1gr-CY-YFt" firstAttribute="leading" secondItem="HFp-Zx-jew" secondAttribute="trailing" constant="8" id="ft4-Al-dNd"/>
+                            <constraint firstItem="bP8-w8-nak" firstAttribute="centerY" secondItem="T9K-XO-ca1" secondAttribute="centerY" id="lOW-bE-ebL"/>
+                            <constraint firstItem="Kw9-mb-Uzf" firstAttribute="leading" secondItem="Y5e-ph-CHi" secondAttribute="trailing" constant="8" id="m2V-47-0kf"/>
+                            <constraint firstItem="zCW-br-T5b" firstAttribute="leading" secondItem="NC3-Jy-y8z" secondAttribute="trailing" constant="8" id="nAT-pc-3VW"/>
+                            <constraint firstItem="T9K-XO-ca1" firstAttribute="leading" secondItem="xAj-0V-glt" secondAttribute="leading" constant="16" id="nUV-ix-KF0"/>
+                            <constraint firstItem="zCW-br-T5b" firstAttribute="top" secondItem="Kw9-mb-Uzf" secondAttribute="bottom" constant="8" id="nqz-Uz-U6x"/>
+                            <constraint firstAttribute="trailing" secondItem="A3j-SD-3pQ" secondAttribute="trailing" constant="16" id="pYG-OV-Weh"/>
+                            <constraint firstItem="1gr-CY-YFt" firstAttribute="top" secondItem="bP8-w8-nak" secondAttribute="bottom" constant="8" id="uWl-5q-lbd"/>
+                            <constraint firstItem="Kw9-mb-Uzf" firstAttribute="top" secondItem="A3j-SD-3pQ" secondAttribute="bottom" constant="8" id="zdc-CM-LCb"/>
+                        </constraints>
                     </view>
                     <connections>
+                        <outlet property="btnEmail" destination="bP8-w8-nak" id="9mC-Wk-dRm"/>
+                        <outlet property="btnPhone" destination="1gr-CY-YFt" id="SbR-pa-WCx"/>
+                        <outlet property="conWidthAddress" destination="z4g-Ow-TSZ" id="Qtc-bU-67o"/>
+                        <outlet property="conWidthAddressLabel" destination="Z7h-E0-O46" id="b9W-8K-rfK"/>
+                        <outlet property="conWidthChief" destination="27l-wn-lLu" id="tsk-Mt-7hu"/>
+                        <outlet property="conWidthChiefLabel" destination="Aku-JT-lTA" id="MTX-Eg-cVi"/>
+                        <outlet property="conWidthEmail" destination="MOB-jX-7cK" id="ycl-Wh-GS8"/>
+                        <outlet property="conWidthEmailLabel" destination="S5H-jM-5Bz" id="6BL-xl-z8v"/>
+                        <outlet property="conWidthFather" destination="FIa-K9-qgp" id="tip-iR-AjS"/>
+                        <outlet property="conWidthFatherLabel" destination="ODb-km-WXx" id="BTl-NL-Lgl"/>
+                        <outlet property="conWidthPhone" destination="bFB-Lh-0Lr" id="OWP-Yg-ERL"/>
+                        <outlet property="conWidthPhoneLabel" destination="1tU-wH-l78" id="Goa-ZW-4NY"/>
+                        <outlet property="lbAddress" destination="A3j-SD-3pQ" id="rzH-Im-LBh"/>
+                        <outlet property="lbAddressTitle" destination="VMx-6t-5XE" id="R3b-SA-UUB"/>
+                        <outlet property="lbChief" destination="zCW-br-T5b" id="TfN-sI-16C"/>
+                        <outlet property="lbChiefTitle" destination="NC3-Jy-y8z" id="tYf-8o-Eqv"/>
+                        <outlet property="lbEmailTitle" destination="T9K-XO-ca1" id="tfe-Zy-pNt"/>
+                        <outlet property="lbFather" destination="Kw9-mb-Uzf" id="f3Y-Ug-Sxy"/>
+                        <outlet property="lbFatherTitle" destination="Y5e-ph-CHi" id="axG-lz-Zkc"/>
+                        <outlet property="lbPhoneTitle" destination="HFp-Zx-jew" id="20U-9j-tIS"/>
                         <outlet property="lbTitle" destination="Wz8-t1-gqF" id="yPd-RG-dXk"/>
                     </connections>
                 </viewController>

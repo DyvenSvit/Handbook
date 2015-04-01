@@ -10,6 +10,7 @@
 #import "HDepartment+CD.h"
 #import "HCommunity+CD.h"
 #import "HCommunitiesViewController.h"
+#import "HDepartmentCell.h"
 
 @interface HDepartmentsViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
 

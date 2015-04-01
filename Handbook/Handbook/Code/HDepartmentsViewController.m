@@ -18,6 +18,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     departments = [HDepartment getDepartments];
+    
+    [[self navigationItem] setTitle:@"Регіони"];
+    [[self navigationItem] setBackBarButtonItem:[[UIBarButtonItem alloc] initWithTitle:@" " style:UIBarButtonItemStyleDone target:nil action:nil]];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -32,10 +35,10 @@
 
 -(UITableViewCell*)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    UITableViewCell *result = [tableView dequeueReusableCellWithIdentifier:@"HDepartmentCell" forIndexPath:indexPath];
+    HDepartmentCell *result = (HDepartmentCell*)[tableView dequeueReusableCellWithIdentifier:@"HDepartmentCell" forIndexPath:indexPath];
     
-    result.textLabel.text = ((HDepartment*)departments[indexPath.row]).title;
-    
+    result.lbTitle.text = ((HDepartment*)departments[indexPath.row]).title;
+
     return result;
 }
 
